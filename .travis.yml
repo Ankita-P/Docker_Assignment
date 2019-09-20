@@ -7,7 +7,7 @@ script:
   - docker images ankitapatil90/node
 
 before_deploy:
-  - docker login -u ankitapatil90 Shri2311*
+  - docker login -u ankitapatil90 -p Shri2311*
 
 deploy:
   provider: script
