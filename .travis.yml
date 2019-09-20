@@ -5,3 +5,12 @@ services:
 script:
   - docker build -t ankitapatil90/node .
   - docker images ankitapatil90/node
+
+before_deploy:
+  - docker login -u ankitapatil90 Shri2311*
+
+deploy:
+  provider: script
+  script: docker push ankitapatil90/node
+  on:
+    branch: master
