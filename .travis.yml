@@ -2,6 +2,6 @@ sudo: required
 services:
   - docker
 
-  script:
-    - docker build -t ankitapatil90/node .
-    - docker images ankitapatil90/node
+script:
+  - docker build -t ankitapatil90/node .
+  - docker images ankitapatil90/node
